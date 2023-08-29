@@ -1,3 +1,4 @@
+import { getImageUrl } from "./cloudinary/getImageUrl";
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import { SWRConfig } from "swr";
 import { ethers } from "ethers";
@@ -134,6 +135,29 @@ function WrongChainButton() {
 
         </>
       )}
+    </>
+  );
+}
+
+function ChainIndicator() {
+  const { wrongChain } = useWeb3Onboard();
+  if (wrongChain != null && wrongChain) return null;
+
+  return (
+    <>
+      <div className="App-header-user-netoowork">
+        <div className="network-indictor">
+          <img
+            style={{ width: 20, height: 20 }}
+            src={getImageUrl({
+              path: "coins/others/kava-original",
+              format: "png",
+            })}
+            alt="kavaIcon"
+          />{" "}
+          Kava
+        </div>
+      </div>
     </>
   );
 }
@@ -576,6 +600,7 @@ function FullApp() {
 
 
                 <WrongChainButton />
+                <ChainIndicator />
 
                 <AppHeaderUser
                   disconnectAccountAndCloseSettings={disconnectAccountAndCloseSettings}

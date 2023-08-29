@@ -41,7 +41,7 @@ export default function TokenCard() {
                 path: "coins/klp-original",
                 format: "png",
               })}
-              alt="qpxBigIcon"
+              alt="klpBigIcon"
             />{" "}
             <span className="text-bigger">KLP</span>
           </div>
