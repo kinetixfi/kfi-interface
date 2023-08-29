@@ -121,16 +121,11 @@ export const TRIGGER_PREFIX_BELOW = "<";
 export const MIN_PROFIT_BIPS = 0;
 
 export const KLPPOOLCOLORS = {
-  MATIC: "#7C43DA",
+  KAVA: "#ff5650",
   ETH: "#6185F5",
   BTC: "#F7931A",
-  LINK: "#3256D6",
-  USDC: "#2775CA",
+  ATOM: "#2e3248",
   USDT: "#67B18A",
-  AAVE: "#9695F8",
-  DAI: "#FAC044",
-  UNI: "#E9167C",
-  BUSD: "#F0B90B",
 };
 export const HIGH_EXECUTION_FEES_MAP = {
   [KAVA]: 30, // 3 USD
