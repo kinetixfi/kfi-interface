@@ -33,7 +33,7 @@ export default function Disclaimer(props) {
             target="_blank"
             rel="noreferrer"
           >
-            Kinetix Terms and Coinditions
+            Kinetix Terms and Conditions
           </a>
         </div>
         <div style={{ padding: "16px 12px", display: "flex", flexDirection: "column", gap: "32px" }}>
