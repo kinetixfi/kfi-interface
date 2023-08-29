@@ -1725,6 +1725,7 @@ a:not([href]):not([class]):hover {
 
 .comingSoonMenu{
   position: relative;
+  padding: 0 18px;
 }
 .comingSoonMenu:hover::after{
   content: 'coming soon';
