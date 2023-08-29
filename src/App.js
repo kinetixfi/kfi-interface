@@ -125,13 +125,13 @@ function WrongChainButton() {
     <>
       {wrongChain && (
         <>
-        <div className="App-header-user-link">
-          <div className="btn btn-red address-btn" onClick={() => swithToKava()}>
-            Switch to Kava
+          <div className="App-header-user-link">
+            <div className="btn btn-red address-btn" onClick={() => swithToKava()}>
+              Switch to Kava
+            </div>
           </div>
-        </div>
 
-      
+
         </>
       )}
     </>
@@ -169,9 +169,10 @@ function AppHeaderLinks({ small, openSettings, clickCloseIcon }) {
         </div>
       )} */}
       <div className="App-header-link-container">
-        <a href="https://dex.kinetix.finance/#/swap" target="_blank" rel="noreferrer">
+        <div className="comingSoonMenu">Swap</div>
+        {/* <a href="https://dex.kinetix.finance/#/swap" target="_blank" rel="noreferrer">
           Swap
-        </a>
+        </a> */}
       </div>
       <div className="App-header-link-container">
         <NavLink activeClassName="active" to="/trade" className="active">
@@ -179,14 +180,16 @@ function AppHeaderLinks({ small, openSettings, clickCloseIcon }) {
         </NavLink>
       </div>
       <div className="App-header-link-container">
-        <a href="https://dex.kinetix.finance/#/pools" target="_blank" rel="noreferrer">
+        <div className="comingSoonMenu">Pool</div>
+        {/* <a href="https://dex.kinetix.finance/#/pools" target="_blank" rel="noreferrer">
           Pool
-        </a>
+        </a> */}
       </div>
       <div className="App-header-link-container">
-        <a href="https://dex.kinetix.finance/#/farm" target="_blank" rel="noreferrer">
+        <div className="comingSoonMenu">Farm</div>
+        {/* <a href="https://dex.kinetix.finance/#/farm" target="_blank" rel="noreferrer">
           Farm
-        </a>
+        </a> */}
       </div>
       {/* <div className="App-header-link-container">
         <a href="https://zksafe.kinetix.finance/welcome" target="_blank" rel="noreferrer">
@@ -570,7 +573,7 @@ function FullApp() {
                 <AppHeaderLinks />
               </div>
               <div className="App-header-container-right">
-     
+
 
                 <WrongChainButton />
 

@@ -56,6 +56,7 @@
   display: flex;
   gap: 16px;
   align-items: center;
+  height: 80px;
 }
 
 .App-header.small {
@@ -806,6 +807,17 @@ button.App-connect-wallet:hover {
   color: #696c80;
   display: flex;
 
+}
+
+.App-header-container-left .comingSoonMenu {
+  font-weight: normal;
+  cursor: pointer;
+  border-radius: 10px;
+  color: #696c80;
+}
+.App-header-container-left .comingSoonMenu:hover {
+  opacity: 1;
+  color: #eee;
 }
 
 @media (max-width: 1233px) {
@@ -1709,4 +1721,21 @@ a:not([href]):not([class]):hover {
   line-height: 24px;
   background: #ff4444;
   width: 100%;
+}
+
+.comingSoonMenu{
+  position: relative;
+}
+.comingSoonMenu:hover::after{
+  content: 'coming soon';
+  position: absolute;
+  left: -8px;
+  top: 24px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  color: #C2C2C2;
+  background: #1D1E20;
+  font-size: 12px;
+  display: inline-flex;
+  width: max-content;
 }
