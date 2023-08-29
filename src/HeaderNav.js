@@ -26,11 +26,9 @@ export default function HeaderNav() {
         </NavLink>
       </div>
       <div className="App-header-link-container">
-        {/* <a href="https://leaderboard.kinetix.finance" target="_blank" rel="noopener noreferrer">
+        <a href="https://leaderboard.kinetix.finance" target="_blank" rel="noopener noreferrer">
           <span className="hover-white">Leaderboard</span>
-        </a> */}
-        <div  className="comingSoonMenu">Farm</div>
-
+        </a>
       </div>
       {/* <div className="App-header-link-container">
         <a href="https://stats.kinetix.finance" target="_blank" rel="noopener noreferrer">
