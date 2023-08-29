@@ -12,7 +12,7 @@
     align-items: flex-start;
     gap: 10px;
     border-radius: 12px;
-    /*background: var(--surface-3, #1D1E20);*/
+    background: var(--surface-3, #1D1E20);
     font-size: 14px;
     height: 36px;
     align-items: center;

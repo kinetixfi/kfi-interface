@@ -141,7 +141,8 @@ function WrongChainButton() {
 
 function ChainIndicator() {
   const { wrongChain } = useWeb3Onboard();
-  if (wrongChain != null && wrongChain) return null;
+  const { account, active, library, chainId } = useWeb3Onboard();
+  if ((wrongChain != null && wrongChain) || !active) return null;
 
   return (
     <>
