@@ -829,6 +829,7 @@ button.App-connect-wallet:hover {
   cursor: pointer;
   border-radius: 10px;
   color: #696c80;
+  padding: 0 18px;
 }
 .App-header-container-left .comingSoonMenu:hover {
   opacity: 1;
@@ -1740,7 +1741,7 @@ a:not([href]):not([class]):hover {
 
 .comingSoonMenu{
   position: relative;
-  padding: 0 18px;
+  /*padding: 0 18px;*/
 }
 .comingSoonMenu:hover::after{
   content: 'coming soon';
@@ -1754,4 +1755,21 @@ a:not([href]):not([class]):hover {
   font-size: 12px;
   display: inline-flex;
   width: max-content;
+}
+.App-header-drawer .App-header-link-container .comingSoonMenu {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    color: #646668;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
