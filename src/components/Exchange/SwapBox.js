@@ -1379,7 +1379,7 @@ export default function SwapBox(props) {
     contract = new ethers.Contract(routerAddress, Router.abi, library.getSigner());
 
     Api.callContract(chainId, contract, method, params, {
-      gasLimit: bigNumberify(500000),
+      gasLimit: bigNumberify(750000),
       value,
       sentMsg: `Swap ${!isMarketOrder ? " order " : ""} submitted!`,
       successMsg: `Swapped ${formatAmount(fromAmount, fromToken.decimals, 4, true)} ${

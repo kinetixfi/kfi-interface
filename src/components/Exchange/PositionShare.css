@@ -79,7 +79,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: transparent linear-gradient(112deg, #3E7BFA1A 0%, #43228099 100%) 0% 0%;
+  /*background: #262828;*/
   background-repeat: no-repeat;
   /* border: 4px solid #3E7BFA; */
   border-radius: 8px;
