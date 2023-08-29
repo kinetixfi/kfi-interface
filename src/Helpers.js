@@ -76,12 +76,12 @@ export const DEFAULT_MAX_USDK_AMOUNT = expandDecimals(200 * 1000 * 1000, 18);
 
 export const TAX_BASIS_POINTS = 50;
 export const STABLE_TAX_BASIS_POINTS = 5;
-export const MINT_BURN_FEE_BASIS_POINTS = 15;
+export const MINT_BURN_FEE_BASIS_POINTS = 0;
 export const SWAP_FEE_BASIS_POINTS = 30;
 export const STABLE_SWAP_FEE_BASIS_POINTS = 10;
 export const MARGIN_FEE_BASIS_POINTS = 10;
 
-export const LIQUIDATION_FEE = expandDecimals(10, USD_DECIMALS);
+export const LIQUIDATION_FEE = expandDecimals(5, USD_DECIMALS);
 
 export const KLP_COOLDOWN_DURATION = 60;
 export const THRESHOLD_REDEMPTION_VALUE = expandDecimals(993, 27); // 0.993
