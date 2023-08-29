@@ -1,4 +1,4 @@
-import kinetixPerpIcon from "../img/kinetixperp.svg";
+import kinetixPerpIcon from "../assets/logos/logo.svg";
 
 import { init } from "@web3-onboard/react";
 import injectedModule, { ProviderLabel } from "@web3-onboard/injected-wallets";
@@ -19,10 +19,7 @@ export default function useInitWeb3Onboard() {
     displayUnavailable: true,
     displayUnavailable: [
       ProviderLabel.MetaMask,
-      ProviderLabel.Trust,
-      ProviderLabel.OKXWallet,
-      ProviderLabel.BitKeep,
-      ProviderLabel.DeFiWallet,
+      ProviderLabel.Brave,
     ],
     custom: [],
     filter: {
@@ -30,22 +27,16 @@ export default function useInitWeb3Onboard() {
     },
     sort: (wallets) => {
       const metaMask = wallets.find(({ label }) => label === ProviderLabel.MetaMask);
-      const okxWallet = wallets.find(({ label }) => label === ProviderLabel.OKXWallet);
-      const trustWallet = wallets.find(({ label }) => label === ProviderLabel.Trust);
-      const bitkeepWallet = wallets.find(({ label }) => label === ProviderLabel.BitKeep);
+      const brave = wallets.find(({ label }) => label === ProviderLabel.Brave);
 
       return (
         [
           metaMask,
-          okxWallet,
-          bitkeepWallet,
-          trustWallet,
+          brave,
           ...wallets.filter(
             ({ label }) =>
               label !== ProviderLabel.MetaMask &&
-              label !== ProviderLabel.OKXWallet &&
-              label !== ProviderLabel.BitKeep &&
-              label !== ProviderLabel.Trust
+              label !== ProviderLabel.Brave
           ),
         ]
           // remove undefined values
@@ -92,15 +83,11 @@ export default function useInitWeb3Onboard() {
       recommendedInjectedWallets: [
         { name: "MetaMask", url: "https://metamask.io" },
         { name: "WalletConnect", url: "https://walletconnect.com" },
-        { name: "TrustWallet", url: "https://trustwallet.com" },
-        { name: "OKX Wallet", url: "https://www.okx.com" },
-        { name: "BitKeep", url: "https://bitkeep.com" },
-        { name: "Defi Wallet", url: "https://crypto.com" },
       ],
-      agreement: {
-        version: "1.0.0",
-        termsUrl: "https://docs.google.com/document/d/1Gglh43oxUZHdgrS2L9lZfsI4f6HYNF6MbBDsDPJVFkM/edit?pli=1",
-      },
+      // agreement: {
+      //   version: "1.0.0",
+      //   termsUrl: "https://docs.google.com/document/d/1Gglh43oxUZHdgrS2L9lZfsI4f6HYNF6MbBDsDPJVFkM/edit?pli=1",
+      // },
       gettingStartedGuide: "https://info.kinetix.finance/",
       explore: "https://info.kinetix.finance/contracts-and-addresses",
     },
