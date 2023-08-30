@@ -6,8 +6,8 @@ const { parseEther } = ethers.utils;
 
 const constants = {
   [KAVA]: {
-    nativeTokenSymbol: "ETH",
-    wrappedTokenSymbol: "WETH",
+    nativeTokenSymbol: "KAVA",
+    wrappedTokenSymbol: "WKAVA",
     defaultCollateralSymbol: "USDT",
     defaultFlagOrdersEnabled: true,
     positionReaderPropsLength: 9,
