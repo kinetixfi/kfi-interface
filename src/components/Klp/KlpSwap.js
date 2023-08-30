@@ -223,7 +223,7 @@ export default function KlpSwap(props) {
     setIsWaitingForApproval(false);
   };
 
-  const pkfiPrice = expandDecimals(1, 18);
+  const pkfiPrice = expandDecimals(2, 28);
 
 
   let totalApr = useRef(bigNumberify(0));
