@@ -656,3 +656,22 @@ button.btn-link:hover .logout-icon {
 a:hover{
   color: #FF7847;
 }
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 24px;
+  background: #414141;
+}
+
+::-moz-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-moz-scrollbar-thumb {
+  border-radius: 24px;
+  background: #414141;
+}
