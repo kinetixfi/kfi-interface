@@ -368,13 +368,14 @@ function Referrals({ connectWallet, setPendingTxns, pendingTxns }) {
                   <img
                     width={74}
                     height={74}
-                    src={getImageUrl({
-                      path: "illustration/ref-cashback",
-                      format: "png",
-                      width: 100,
-                      height: 100,
-                      quality: 100,
-                    })}
+                    src="https://res.cloudinary.com/kinetix/image/upload/v1693210875/website-assets/referrals/illustration-icon3.svg"
+                    // src={getImageUrl({
+                    //   path: "illustration/ref-cashback",
+                    //   format: "png",
+                    //   width: 100,
+                    //   height: 100,
+                    //   quality: 100,
+                    // })}
                     alt="Cashback"
                   />
                 </div>
