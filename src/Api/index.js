@@ -137,7 +137,7 @@ export function useCoingeckoPrices(symbol) {
     USDC: 1,
     USDT: 1,
     DAI: 1,
-    PKFI: 0.044,
+    PKFI: 0.02,
   }[symbol];
 
   const { res, error } = useSWR(`https://api.coingecko.com/api/v3/simple/price?ids=${symbol}&vs_currencies=usd`, {
