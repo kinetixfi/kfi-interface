@@ -121,22 +121,18 @@ export function useCoingeckoPrices(symbol) {
   const _symbol = {
     BTC: "bitcoin",
     ETH: "ethereum",
-    MATIC: "matic-network",
-    WBTC: "wrapped-bitcoin",
-    USDC: "usd-coin",
+    KAVA: "kava",
+    ATOM: "cosmos-hub",
     USDT: "tether",
-    DAI: "dai",
     PKFI: "pkfi",
   }[symbol];
 
   const _defaultPrice = {
     BTC: 27000,
     ETH: 1800,
-    MATIC: 0.8,
-    WBTC: 27000,
-    USDC: 1,
+    KAVA: 0.8,
+    ATOM: 7,
     USDT: 1,
-    DAI: 1,
     PKFI: 0.02,
   }[symbol];
 

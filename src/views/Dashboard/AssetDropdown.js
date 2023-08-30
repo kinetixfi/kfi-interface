@@ -13,7 +13,7 @@ function AssetDropdown({ assetSymbol, assetInfo }) {
   const { chainId } = useChainId();
   let { coingecko, kava } = ICONLINKS[chainId][assetSymbol];
   const unavailableTokenSymbols = {
-    2222: ["ETHEREUM"],
+    2222: ["KAVA"],
   };
 
   return (

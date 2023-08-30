@@ -43,7 +43,7 @@ function fillGaps(prices, periodSeconds) {
 
 
 function getCandlePricesFromGraph(tokenSymbol, period) {
-  if (["ETH"].includes(tokenSymbol)) {
+  if (["KAVA"].includes(tokenSymbol)) {
     tokenSymbol = "W"+tokenSymbol;
   }
 
