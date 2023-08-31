@@ -29,7 +29,7 @@ export default function Disclaimer(props) {
           Please check the boxes below to confirm your agreement to the
           <br />
           <a
-            href="https://docs.google.com/document/d/1Gglh43oxUZHdgrS2L9lZfsI4f6HYNF6MbBDsDPJVFkM"
+            href="https://docs.google.com/document/d/1XhnspV89JVU637jNXBZK4JDcF_KTFgBsMoMh5RaU7rk"
             target="_blank"
             rel="noreferrer"
           >
