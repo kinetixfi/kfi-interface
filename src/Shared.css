@@ -653,6 +653,9 @@ button.btn-link:hover .logout-icon {
   background: #625df5 !important;
   border: none;
 }
+a {
+  color: #CAC7D9;
+}
 a:hover{
   color: #FF7847;
 }
