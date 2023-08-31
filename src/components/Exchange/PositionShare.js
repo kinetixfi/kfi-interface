@@ -3,7 +3,7 @@ import { toJpeg } from "html-to-image";
 import cx from "classnames";
 import BiCopy from "../../assets/icons/copyIcon.svg";
 import RiFileDownloadLine from "../../assets/icons/downloadIcon.svg";
-import FiTwitter from "../../assets/icons/twitterIcon.svg";
+import FiTwitter from "../../assets/icons/twitterLogo.svg";
 import { useCopyToClipboard } from "react-use";
 import Modal from "../Modal/Modal";
 import qpxLogo from "../../assets/logos/Kinetix-Logo.svg";
@@ -129,7 +129,7 @@ function PositionShare({ setIsPositionShareModalOpen, isPositionShareModalOpen, 
               rel="noreferrer"
               href={tweetLink}
             >
-              <img src={FiTwitter} alt="Twitter" />
+              <img src={FiTwitter} width="12" alt="Twitter" />
               Tweet
             </a>
           </div>
