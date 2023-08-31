@@ -2227,7 +2227,7 @@ export function getHomeUrl() {
 }
 
 export function getRootShareApiUrl() {
-  return "https://perps-share.kinetix.finance";
+  return "https://share.kinetix.finance";
 }
 
 export function importImage(name) {
