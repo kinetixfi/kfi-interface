@@ -563,13 +563,12 @@ export default function KlpSwap(props) {
       swapTokenAddress === AddressZero
         ? [klpAmount, minOut, account]
         : [swapTokenAddress, klpAmount, minOut, account];
-    console.log("🚀 ~ file: KlpSwap.js:578 ~ sellKlp ~ params:", params)
 
     callContract(chainId, contract, method, params, {
       gasLimit: bigNumberify(1500000),
-      sentMsg: "Sell submitted!",
-      failMsg: "Sell failed.",
-      successMsg: `${formatAmount(klpAmount, 18, 4, true)} KLP sold for ${formatAmount(
+      sentMsg: "Providing...",
+      failMsg: "Remove Liquidity failed.",
+      successMsg: `${formatAmount(klpAmount, 18, 4, true)} KLP removed for ${formatAmount(
         swapAmount,
         swapTokenInfo.decimals,
         4,
