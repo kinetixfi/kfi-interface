@@ -11,7 +11,7 @@ import Telegram from "./assets/social/Telegram";
 import X from "./assets/social/X";
 const linkList = [
   { link: "https://twitter.com/KinetixFi", icon: <X /> },
-  { link: "", icon: <Discord /> },
+  { link: "https://discord.com/invite/kinetixfi", icon: <Discord /> },
   { link: "https://t.me/KinetixFi", icon: <Telegram /> },
   { link: "https://info.kinetix.finance", icon: <GitBook /> },
   { link: "https://github.com/kinetixfi", icon: <GitHub /> },
