@@ -6,8 +6,8 @@ import walletConnectModule from "@web3-onboard/walletconnect";
 import trustModule from "@web3-onboard/trust";
 import { useEffect, useState } from "react";
 
-const WALLET_CONNECT_PROJECT_ID = "fd151f76a4df984913706025cd64d404";
-const WEB3_ONBOARD_DAPP_ID = "2a56b719-c7ea-4a64-bbf1-98569383edd3";
+const WALLET_CONNECT_PROJECT_ID = "1cb7739f49d5b770ffc86dd5a319b1da";
+const WEB3_ONBOARD_DAPP_ID = "71ea938c-67a7-49c5-839d-131465bceb73";
 
 const DEFAULT_CHAIN_ID = 2222;
 
@@ -84,12 +84,12 @@ export default function useInitWeb3Onboard() {
         { name: "MetaMask", url: "https://metamask.io" },
         { name: "WalletConnect", url: "https://walletconnect.com" },
       ],
-      // agreement: {
-      //   version: "1.0.0",
-      //   termsUrl: "https://docs.google.com/document/d/1Gglh43oxUZHdgrS2L9lZfsI4f6HYNF6MbBDsDPJVFkM/edit?pli=1",
-      // },
+//agreement: {
+//version: "1.0.0",
+//termsUrl: "https://docs.google.com/document/d/1Gglh43oxUZHdgrS2L9lZfsI4f6HYNF6MbBDsDPJVFkM/edit?pli=1", */
+//},
       gettingStartedGuide: "https://info.kinetix.finance/",
-      explore: "https://info.kinetix.finance/contracts-and-addresses",
+      explore: "https://info.kinetix.finance/kinetix-architecture/smart-contract-overview",
     },
     accountCenter: {
       desktop: {
@@ -108,7 +108,7 @@ export default function useInitWeb3Onboard() {
             autoDismiss: 0,
             // message: `Your transaction is pending, click <a href="https://goerli.etherscan.io/tx/${transaction.hash}" rel="noopener noreferrer" target="_blank">here</a> for more info.`,
             // or you could use onClick for when someone clicks on the notification itself
-            onClick: () => window.open(`https://goerli.etherscan.io/tx/${transaction.hash}`),
+            onClick: () => window.open(`https://kavascan.com/tx/${transaction.hash}`),
           };
         }
       },
