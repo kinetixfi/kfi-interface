@@ -58,7 +58,7 @@ const TOKENS = {
     {
       name: "USDt",
       symbol: "USDT",
-      address: "0x919c1c267bc06a7039e03fcc2ef738525769109c",
+      address: "0x919C1c267BC06a7039e03fcc2eF738525769109c",
       coingeckoUrl: "https://www.coingecko.com/en/coins/tether",
       decimals: 6,
       isStable: true,
