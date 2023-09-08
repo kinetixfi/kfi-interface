@@ -65,7 +65,6 @@ export default function useInitWeb3Onboard() {
     wallets: [
       walletConnect,
       injected,
-      trust,
     ],
     chains: [
       {
