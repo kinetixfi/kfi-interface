@@ -194,10 +194,10 @@ function AppHeaderLinks({ small, openSettings, clickCloseIcon }) {
         </div>
       )} */}
       <div className="App-header-link-container">
-        <div className="comingSoonMenu">Swap</div>
-        {/* <a href="https://dex.kinetix.finance/#/swap" target="_blank" rel="noreferrer">
+        {/* <div className="comingSoonMenu">Swap</div> */}
+        <a href="https://dex.kinetix.finance/#/swap" target="_blank" rel="noreferrer">
           Swap
-        </a> */}
+        </a>
       </div>
       <div className="App-header-link-container">
         <NavLink activeClassName="active" to="/trade" className="active">
@@ -205,10 +205,10 @@ function AppHeaderLinks({ small, openSettings, clickCloseIcon }) {
         </NavLink>
       </div>
       <div className="App-header-link-container">
-        <div className="comingSoonMenu">Pool</div>
-        {/* <a href="https://dex.kinetix.finance/#/pools" target="_blank" rel="noreferrer">
+        {/* <div className="comingSoonMenu">Pool</div> */}
+        <a href="https://dex.kinetix.finance/#/pools" target="_blank" rel="noreferrer">
           Pool
-        </a> */}
+        </a>
       </div>
       <div className="App-header-link-container">
         <div className="comingSoonMenu">Farm</div>
@@ -216,33 +216,6 @@ function AppHeaderLinks({ small, openSettings, clickCloseIcon }) {
           Farm
         </a> */}
       </div>
-      {/* <div className="App-header-link-container">
-        <a href="https://zksafe.kinetix.finance/welcome" target="_blank" rel="noreferrer">
-          Safe
-        </a>
-      </div> */}
-      {/* <div className="App-header-link-container">
-      <a href="https://kinetix.finance/#/dragons" target='_blank' rel="noreferrer">
-        Dragons Lair
-        </a>
-      </div>
-      <div className="App-header-link-container">
-      <a href="https://kinetix.finance/#/gamehub" target='_blank' rel="noreferrer">
-          Gaming Hub
-          <img src={NewBadge} alt='new' style={{marginLeft:8}} />
-        </a>
-      </div>
-      <div className="App-header-link-container">
-      <a href="https://kinetix.finance/#/predictions" target='_blank' rel="noreferrer">
-          Predictions
-          <img src={NewBadge} alt='new' style={{marginLeft:8}} />
-        </a>
-      </div>
-      <div className="App-header-link-container">
-      <a href="https://kinetix.finance/#/convert" target='_blank' rel="noreferrer">
-        Convert
-        </a>
-      </div> */}
       <div className="App-header-link-container">
         <a href="https://stats.kinetix.finance" target="_blank" rel="noreferrer">
           Analytics
