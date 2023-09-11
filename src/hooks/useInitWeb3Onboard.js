@@ -19,7 +19,9 @@ export default function useInitWeb3Onboard() {
     displayUnavailable: true,
     displayUnavailable: [
       ProviderLabel.MetaMask,
+      ProviderLabel.OKXWallet,
       ProviderLabel.Brave,
+    
     ],
     custom: [],
     filter: {
@@ -27,15 +29,18 @@ export default function useInitWeb3Onboard() {
     },
     sort: (wallets) => {
       const metaMask = wallets.find(({ label }) => label === ProviderLabel.MetaMask);
+      const okxWallet = wallets.find(({ label }) => label === ProviderLabel.OKXWallet);
       const brave = wallets.find(({ label }) => label === ProviderLabel.Brave);
 
       return (
         [
           metaMask,
+          okxWallet,
           brave,
           ...wallets.filter(
             ({ label }) =>
               label !== ProviderLabel.MetaMask &&
+              label !== ProviderLabel.OKXWallet &&
               label !== ProviderLabel.Brave
           ),
         ]
