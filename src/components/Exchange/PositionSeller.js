@@ -775,7 +775,7 @@ export default function PositionSeller(props) {
         return (
           <div className="Confirmation-box-warning">
             Reducing the position at the current price will forfeit a&nbsp;
-            <a href="https://info.kinetix.finance/trading" target="_blank" rel="noopener noreferrer">
+            <a href="https://docs.kinetix.finance/kinetix-defi-hub/perpetual-and-spot-trading/guide-to-perp-trading" target="_blank" rel="noopener noreferrer">
               pending profit
             </a>{" "}
             of {deltaStr}. <br />
@@ -789,7 +789,7 @@ export default function PositionSeller(props) {
       return (
         <div className="Confirmation-box-warning">
           This order will forfeit a&nbsp;
-          <a href="https://info.kinetix.finance/trading" target="_blank" rel="noopener noreferrer">
+          <a href="https://docs.kinetix.finance/kinetix-defi-hub/perpetual-and-spot-trading/guide-to-perp-trading" target="_blank" rel="noopener noreferrer">
             profit
           </a>{" "}
           of {deltaStr}. <br />
@@ -1102,7 +1102,7 @@ export default function PositionSeller(props) {
                       <br />
 
                       <div className="PositionSeller-fee-item">
-                        <a href="https://info.kinetix.finance/trading" target="_blank" rel="noopener noreferrer">
+                        <a href="https://docs.kinetix.finance/kinetix-defi-hub/perpetual-and-spot-trading/guide-to-perp-trading" target="_blank" rel="noopener noreferrer">
                           More Info
                         </a>{" "}
                         about fees.

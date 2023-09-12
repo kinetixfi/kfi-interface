@@ -82,7 +82,7 @@ export default function TokenCard() {
               </div>
 
               <a
-                href="https://info.kinetix.finance/klp"
+                href="https://docs.kinetix.finance/kinetix-architecture/kinetix-tokenomics/klp-pool"
                 target="_blank"
                 rel="noreferrer"
                 className="btn-read-more"

@@ -2219,7 +2219,7 @@ export default function SwapBox(props) {
             <br />
             For screenshots and more information, please see the{" "}
             <a
-              href="https://info.kinetix.finance/trading#stop-loss-take-profit-orders"
+              href="https://docs.kinetix.finance/kinetix-defi-hub/perpetual-and-spot-trading/guide-to-perp-trading#stop-loss-take-profit-orders"
               target="_blank"
               rel="noopener noreferrer"
               className="doc-link"
@@ -2314,7 +2314,7 @@ export default function SwapBox(props) {
                       <br />
                       <br />
                       <a
-                        href=" https://info.kinetix.finance/trading#opening-a-position"
+                        href=" https://docs.kinetix.finance/kinetix-defi-hub/perpetual-and-spot-trading/guide-to-perp-trading"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="ahreftextcolorwallet"
@@ -2344,7 +2344,7 @@ export default function SwapBox(props) {
                       <br />
                       <br />
                       <a
-                        href=" https://info.kinetix.finance/trading#opening-a-position"
+                        href=" https://docs.kinetix.finance/kinetix-defi-hub/perpetual-and-spot-trading/guide-to-perp-trading"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="ahreftextcolorwallet"
@@ -2382,7 +2382,7 @@ export default function SwapBox(props) {
                       )}
                       <br />
                       <a
-                        href=" https://info.kinetix.finance/trading#opening-a-position"
+                        href=" https://docs.kinetix.finance/kinetix-defi-hub/perpetual-and-spot-trading/guide-to-perp-trading"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="ahreftextcolorwallet"
@@ -2428,7 +2428,7 @@ export default function SwapBox(props) {
         <div className="Exchange-swap-market-box-title">Useful Links</div>
         <div style={{ display: "flex", flexDirection: "column", gap: 10 }} className="Exchange-info-row">
           <div className="Exchange-info-label-button">
-            <a href="https://info.kinetix.finance/trading-guide" target="_blank" rel="noopener noreferrer">
+            <a href="https://docs.kinetix.finance/kinetix-defi-hub/perpetual-and-spot-trading/guide-to-perp-trading" target="_blank" rel="noopener noreferrer">
               Trading guide ↗
             </a>
           </div>
