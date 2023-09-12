@@ -13,7 +13,7 @@ const linkList = [
   { link: "https://twitter.com/KinetixFi", icon: <X /> },
   { link: "https://discord.com/invite/kinetixfi", icon: <Discord /> },
   { link: "https://t.me/KinetixFi", icon: <Telegram /> },
-  { link: "https://info.kinetix.finance", icon: <GitBook /> },
+  { link: "https://docs.kinetix.finance", icon: <GitBook /> },
   { link: "https://github.com/kinetixfi", icon: <GitHub /> },
   { link: "https://medium.com/@kinetixfi", icon: <Medium /> },
   { link: "", icon: <Blog /> },

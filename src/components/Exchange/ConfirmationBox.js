@@ -269,7 +269,7 @@ export default function ConfirmationBox(props) {
           return (
             <div className="Confirmation-box-warning">
               Increasing this position at the current price will forfeit a&nbsp;
-              <a href="https://info.kinetix.finance/trading" target="_blank" rel="noopener noreferrer">
+              <a href="https://docs.kinetix.finance/kinetix-defi-hub/perpetual-and-spot-trading/guide-to-perp-trading" target="_blank" rel="noopener noreferrer">
                 pending profit
               </a>{" "}
               of {existingPosition.deltaStr}.<br />
@@ -288,7 +288,7 @@ export default function ConfirmationBox(props) {
             return (
               <div className="Confirmation-box-warning">
                 This order will forfeit a&nbsp;
-                <a href="https://info.kinetix.finance/trading" target="_blank" rel="noopener noreferrer">
+                <a href="https://docs.kinetix.finance/kinetix-defi-hub/perpetual-and-spot-trading/guide-to-perp-trading" target="_blank" rel="noopener noreferrer">
                   profit
                 </a>{" "}
                 of {existingPosition.deltaStr}.<br />
@@ -305,7 +305,7 @@ export default function ConfirmationBox(props) {
       return (
         <div className="Confirmation-box-warning">
           A minimum price change of&nbsp;
-          <a href="https://info.kinetix.finance/trading" target="_blank" rel="noopener noreferrer">
+          <a href="https://docs.kinetix.finance/kinetix-defi-hub/perpetual-and-spot-trading/guide-to-perp-trading" target="_blank" rel="noopener noreferrer">
             1.5%
           </a>{" "}
           is required for a position to be in profit. This only applies for the first {MIN_PROFIT_TIME / 60 / 60} hours

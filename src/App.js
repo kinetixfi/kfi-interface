@@ -222,7 +222,7 @@ function AppHeaderLinks({ small, openSettings, clickCloseIcon }) {
         </a>
       </div>
       <div className="App-header-link-container">
-        <a href="https://info.kinetix.finance" target="_blank" rel="noreferrer">
+        <a href="https://docs.kinetix.finance" target="_blank" rel="noreferrer">
           Docs
         </a>
       </div>

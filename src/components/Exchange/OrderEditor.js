@@ -225,7 +225,7 @@ export default function OrderEditor(props) {
       return (
         <div className="Confirmation-box-warning">
           This order will forfeit a&nbsp;
-          <a href="https://info.kinetix.finance/trading" target="_blank" rel="noopener noreferrer">
+          <a href="https://docs.kinetix.finance/kinetix-defi-hub/perpetual-and-spot-trading/guide-to-perp-trading" target="_blank" rel="noopener noreferrer">
             profit
           </a>{" "}
           of {deltaStr}. <br />

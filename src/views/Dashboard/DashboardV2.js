@@ -254,7 +254,7 @@ export default function DashboardV2() {
               )}
               <br />
               <div>
-                <a href="https://info.kinetix.finance/klp" target="_blank" rel="noopener noreferrer">
+                <a href="https://docs.kinetix.finance/kinetix-architecture/kinetix-tokenomics/klp-pool" target="_blank" rel="noopener noreferrer">
                   More Info
                 </a>
               </div>

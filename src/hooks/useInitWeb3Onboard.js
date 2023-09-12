@@ -92,8 +92,8 @@ export default function useInitWeb3Onboard() {
 //version: "1.0.0",
 //termsUrl: "https://docs.google.com/document/d/1Gglh43oxUZHdgrS2L9lZfsI4f6HYNF6MbBDsDPJVFkM/edit?pli=1", */
 //},
-      gettingStartedGuide: "https://info.kinetix.finance/",
-      explore: "https://info.kinetix.finance/kinetix-architecture/smart-contract-overview",
+      gettingStartedGuide: "https://docs.kinetix.finance/",
+      explore: "https://docs.kinetix.finance/kinetix-architecture/smart-contract-overview",
     },
     accountCenter: {
       desktop: {
