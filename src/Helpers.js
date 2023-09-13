@@ -1839,54 +1839,6 @@ export const getTokenInfo = (infoTokens, tokenAddress, replaceNative, nativeToke
   return infoTokens[tokenAddress];
 };
 
-const NETWORK_METADATA = {
-  [KAVA]: {
-    chainId: "0x" + KAVA.toString(16),
-    chainName: "kava",
-    nativeCurrency: {
-      name: "KAVA",
-      symbol: "KAVA",
-      decimals: 18,
-    },
-    rpcUrls: KAVA_RPC_PROVIDERS,
-    blockExplorerUrls: [getExplorerUrl(KAVA)],
-  },
-};
-
-export const addNetwork = async (metadata) => {
-  await window.ethereum.request({ method: "wallet_addEthereumChain", params: [metadata] }).catch();
-};
-
-export const switchNetwork = async (chainId, active) => {
-  if (!active) {
-    // chainId in localStorage allows to switch network even if wallet is not connected
-    // or there is no wallet at all
-    localStorage.setItem(SELECTED_NETWORK_LOCAL_STORAGE_KEY, chainId);
-    document.location.reload();
-    return;
-  }
-
-  try {
-    const chainIdHex = "0x" + chainId.toString(16);
-    await window.ethereum.request({
-      method: "wallet_switchEthereumChain",
-      params: [{ chainId: chainIdHex }],
-    });
-    helperToast.success("Connected to " + getChainName(chainId));
-    return getChainName(chainId);
-  } catch (ex) {
-    // https://docs.metamask.io/guide/rpc-api.html#other-rpc-methods
-    // This error code indicates that the chain has not been added to MetaMask.
-    // 4001 error means user has denied the request
-    // If the error code is not 4001, then we need to add the network
-    if (ex.code !== 4001) {
-      return await addNetwork(NETWORK_METADATA[chainId]);
-    }
-
-    console.error("error", ex);
-  }
-};
-
 export function isMobileDevice(navigator) {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
