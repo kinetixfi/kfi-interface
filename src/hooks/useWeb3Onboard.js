@@ -3,7 +3,7 @@ import { ethers } from "ethers";
 
 import { DEFAULT_CHAIN_ID, KAVA } from "../Helpers";
 
-import { useConnectWallet, useSetChain, useWallets } from "@web3-onboard/react";
+import { useConnectWallet, useSetChain } from "@web3-onboard/react";
 
 export default function useWeb3Onboard() {
   const [{ wallet }, connect, disconnect] = useConnectWallet();
@@ -39,7 +39,7 @@ export default function useWeb3Onboard() {
         setActive(false);      
         setAccount(null);
         setEnsName(null);
-        setChain({chainId:KAVA});
+        // setChain({chainId:KAVA});
       }
     }
   }, [wallet, connectedChain]);

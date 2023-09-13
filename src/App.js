@@ -85,7 +85,7 @@ import { Web3OnboardProvider, useConnectWallet } from "@web3-onboard/react";
 
 import useWeb3Onboard from "./hooks/useWeb3Onboard";
 
-if ("ethereum" in window) {
+if ("ethereum" in window && window.ethereum.autoRefreshOnNetworkChange) {
   window.ethereum.autoRefreshOnNetworkChange = false;
 }
 
