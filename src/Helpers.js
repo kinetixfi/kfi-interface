@@ -83,7 +83,7 @@ export const MARGIN_FEE_BASIS_POINTS = 10;
 
 export const LIQUIDATION_FEE = expandDecimals(5, USD_DECIMALS);
 
-export const KLP_COOLDOWN_DURATION = 60;
+export const KLP_COOLDOWN_DURATION = 900;
 export const THRESHOLD_REDEMPTION_VALUE = expandDecimals(993, 27); // 0.993
 export const FUNDING_RATE_PRECISION = 1000000;
 
