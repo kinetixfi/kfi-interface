@@ -1676,7 +1676,7 @@ export const getFees = async () => {
 };
 
 export const getApiGasPrice = async () => {
-  return bigNumberify(0);
+  return bigNumberify(25100000000);
   // try {
   //   const response = await fetch(process.env.REACT_APP_GAS_API_URL);
   //   const fees = await response.json();
