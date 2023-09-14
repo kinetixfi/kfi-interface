@@ -211,10 +211,10 @@ function AppHeaderLinks({ small, openSettings, clickCloseIcon }) {
         </a>
       </div>
       <div className="App-header-link-container">
-        <div className="comingSoonMenu">Farm</div>
-        {/* <a href="https://dex.kinetix.finance/#/farm" target="_blank" rel="noreferrer">
+        {/* <div className="comingSoonMenu">Farm</div> */}
+        <a href="https://app.steer.finance/kinetix?page=stake" target="_blank" rel="noreferrer">
           Farm
-        </a> */}
+        </a>
       </div>
       <div className="App-header-link-container">
         <a href="https://stats.kinetix.finance" target="_blank" rel="noreferrer">
