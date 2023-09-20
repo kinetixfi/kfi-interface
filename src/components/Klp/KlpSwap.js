@@ -100,7 +100,7 @@ export default function KlpSwap(props) {
   const klpAddress = getContract(chainId, "KLP");
   const klpManagerAddress = getContract(chainId, "KlpManager");
   const rewardRouterAddress = getContract(chainId, "RewardRouter");
-  const tokensForBalanceAndSupplyQuery = [klpAddress, usdkAddress];
+  const tokensForBalanceAndSupplyQuery = [klpAddress, usdkAddress, feeKlpTrackerAddress];
 
   const tokenAddresses = tokens.map((token) => token.address);
 
@@ -165,6 +165,7 @@ export default function KlpSwap(props) {
 
   const klpSupply = balancesAndSupplies ? balancesAndSupplies[1] : bigNumberify(0);
   const usdkSupply = balancesAndSupplies ? balancesAndSupplies[3] : bigNumberify(0);
+  const feeKlpTrackerSupply = balancesAndSupplies ? balancesAndSupplies[5] : bigNumberify(0);
   let aum;
   if (aums && aums.length > 0) {
     aum = isBuying ? aums[0] : aums[1];
@@ -244,8 +245,8 @@ export default function KlpSwap(props) {
     let annualRewardsInUsd = bigNumberify(0);
     let tokensApr = []
     if (!Array.isArray(allTokensPerInterval) && allTokensPerInterval.length === 0) return [,];
-    if (klpSupply.eq(0)) return  [,];
-    if (klpSupply.lt(expandDecimals(1, USDK_DECIMALS))) return  [,];
+    if (feeKlpTrackerSupply.eq(0)) return  [,];
+    if (feeKlpTrackerSupply.lt(expandDecimals(1, USDK_DECIMALS))) return  [,];
     if (klpPrice.eq(0)) return  [,];
     for (let i = 0; i < allTokensPerInterval.length; i++) {
       let tokenApr = {}
@@ -265,14 +266,14 @@ export default function KlpSwap(props) {
       }
 
       const tokenAnnualRewardsInUsd = tokenPrice.mul(tokensPerInterval).mul(86400).mul(365).div(expandDecimals(1, 30)).div(expandDecimals(1, tokenDecimals))
-      tokenApr.apr = tokenAnnualRewardsInUsd.mul(10000).mul(expandDecimals(1, USD_DECIMALS)).div(klpPrice).div(klpSupply.div(expandDecimals(1, USDK_DECIMALS)))/100
+      tokenApr.apr = tokenAnnualRewardsInUsd.mul(10000).mul(expandDecimals(1, USD_DECIMALS)).div(klpPrice).div(feeKlpTrackerSupply.div(expandDecimals(1, USDK_DECIMALS)))/100
       tokensApr.push(tokenApr)
       annualRewardsInUsd = annualRewardsInUsd.add(tokenAnnualRewardsInUsd);
     }
 
-    const apr = annualRewardsInUsd.mul(10000).mul(expandDecimals(1, USD_DECIMALS)).div(klpPrice).div(klpSupply.div(expandDecimals(1, USDK_DECIMALS)))
+    const apr = annualRewardsInUsd.mul(10000).mul(expandDecimals(1, USD_DECIMALS)).div(klpPrice).div(feeKlpTrackerSupply.div(expandDecimals(1, USDK_DECIMALS)))
     return [apr.toNumber() / 100, tokensApr];
-  }, [allTokensPerInterval, pkfiPrice, infoTokens, klpSupply, klpPrice, chainId])
+  }, [allTokensPerInterval, pkfiPrice, infoTokens, feeKlpTrackerSupply, klpPrice, chainId])
 
   const rewardTokens = useMemo(() => {
     if (!Array.isArray(claimableAll) || claimableAll.length !== 2) return [];
