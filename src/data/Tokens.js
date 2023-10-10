@@ -27,7 +27,7 @@ const TOKENS = {
     },
     {
       name: "axlWBTC",
-      symbol: "axlWBTC",
+      symbol: "BTC",
       address: "0x1a35EE4640b0A3B87705B0A4B45D227Ba60Ca2ad",
       coingeckoUrl: "https://www.coingecko.com/en/coins/bitcoin",
       decimals: 8,
@@ -37,7 +37,7 @@ const TOKENS = {
     },
     {
       name: "axlETH",
-      symbol: "axlETH",
+      symbol: "ETH",
       decimals: 18,
       address: "0xb829b68f57CC546dA7E5806A929e53bE32a4625D",
       coingeckoUrl: "https://www.coingecko.com/en/coins/ethereum",
