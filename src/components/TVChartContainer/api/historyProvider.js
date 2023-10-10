@@ -8,7 +8,9 @@ export default {
   getBars: function (symbolInfo, resolution, periodParams) {
     var split_symbol = symbolInfo.name.split(/[:/]/);
 
-    const url = split_symbol[0];
+    let url = split_symbol[0];
+    if(url === 'BTC'){url = 'axlWBTC'}
+    if(url === 'ETH'){url = 'axlETH'}
     return axios
       .get(`${api_root}/api/candles/${url}`, {
         params: {
