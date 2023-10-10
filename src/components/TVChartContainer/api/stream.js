@@ -108,7 +108,9 @@ async function connect() {
       const data = await pythClient.getData();
       for (let i = 0; i < _subs.length; i++) {
         const chartSubcription = _subs[i];
-        const tokenSymbol = chartSubcription.symbolInfo.name.split("/")[0];
+        let tokenSymbol = chartSubcription.symbolInfo.name.split("/")[0];
+        if(tokenSymbol === 'axlWBTC'){tokenSymbol = 'BTC'}
+        if(tokenSymbol === 'axlETH'){tokenSymbol = 'ETH'}
         const pythSymbol = (symbol) => `Crypto.${symbol}/USD`;
         const product = data.productPrice.get(pythSymbol(tokenSymbol));
         const barData = {
