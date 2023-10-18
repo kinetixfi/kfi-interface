@@ -353,7 +353,7 @@ export default function DashboardV2() {
                   <div>${formatAmount(totalVolumeSum, USD_DECIMALS, 0, true)}</div>
                 </div>
                 <div className="App-card-row padding-left">
-                  <div className="label">24h Volume</div>
+                  <div className="label">Last 24hr Volume</div>
                   <div>${formatAmount(volumeInfo, USD_DECIMALS, 0, true)}</div>
                 </div>
                 <div className="App-card-row padding-left">
@@ -381,7 +381,7 @@ export default function DashboardV2() {
                   </div>
                 </div>
                 <div className="App-card-row padding-left">
-                  <div className="label">KLP Pool</div>
+                  <div className="label">Kinetix Perps Liquidity Pool</div>
                   <div>
                     {formatAmount(klpSupply, 18, 0, true)} KLP (
                     <TooltipComponent
@@ -397,7 +397,7 @@ export default function DashboardV2() {
                   <div>${formatAmount(totalFees, USD_DECIMALS, 0, true)}</div>
                 </div>
                 <div className="App-card-row padding-left">
-                  <div className="label">Collected fees from Oct 11, 2023</div>
+                  <div className="label">Collected fees from Oct 18, 2023</div>
                   <div>${numberWithCommas(totalFeesDistributed.toFixed(0))}</div>
                 </div>
               </div>

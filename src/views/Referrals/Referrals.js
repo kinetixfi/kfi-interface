@@ -302,7 +302,7 @@ function Referrals({ connectWallet, setPendingTxns, pendingTxns }) {
               Earn Commissions
             </h3>
             <p>
-              Enjoy Fee-Cashback and Fee-Commissions through <br /> the Kinetix Finance referral program.
+              Enjoy Fee-Cashback and Fee-Commissions through <br /> the Kinetix Perpetual referral program.
             </p>
           </div>
         </div>
