@@ -27,7 +27,7 @@ export default function BuyKlp(props) {
           <div className="section-title-content mb-3">
           <div className="Page-title">+/- Liquidity</div>
           <div className="Page-description">
-            Add liquidity and get tokens to earn fees from swaps and leverage trading in {nativeTokenSymbol}.
+            Add liquidity to earn fees from swaps and leverage trading in {nativeTokenSymbol}.
           </div>
         </div>
       <KlpSwap {...props} isBuying={isBuying} setIsBuying={setIsBuying} />
