@@ -68,6 +68,7 @@ import connectWalletImg from "./img/ic_wallet_24.svg";
 import AddressDropdown from "./components/AddressDropdown/AddressDropdown";
 import { ConnectWalletButton } from "./components/Common/Button";
 import useEventToast from "./components/EventToast/useEventToast";
+import useVolumeMiningControl from "./components/EventToast/useVolumeMiningControl";
 import EventToastContainer from "./components/EventToast/EventToastContainer";
 import SEO from "./components/Common/SEO";
 import useRouteQuery from "./hooks/useRouteQuery";
@@ -298,6 +299,7 @@ function FullApp() {
   const [{ wallet }, connect, disconnect] = useConnectWallet();
 
   useEventToast();
+  useVolumeMiningControl();
 
   const [activatingConnector, setActivatingConnector] = useState();
 

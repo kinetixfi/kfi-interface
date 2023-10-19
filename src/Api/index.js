@@ -11,6 +11,7 @@ import VaultReader from "../abis/VaultReader.json";
 import ReferralStorage from "../abis/ReferralStorage.json";
 import PositionRouter from "../abis/PositionRouter.json";
 import FeeKlpDistributor from "../abis/FeeKlpDistributor.json";
+import TokenDistributor from "../abis/TokenDistributor.json";
 
 import { getContract,  } from "../Addresses";
 import { getConstant } from "../Constants";
@@ -194,6 +195,24 @@ export function useAllTokensPerInterval(library, chainId) {
 }
 
 
+export function useIsAccountRegisteredOnVolumeMining(library, chainId, account) {
+  const [isRegistered, setIsRegistered] = useState(undefined);
+  useEffect(() => {
+    if(!account) {
+      setIsRegistered(undefined)
+      return
+    };
+    const provider = getProvider(library, chainId);
+    const tokenDistributorAddress = getContract(chainId, "TokenDistributor");
+    const contract = new ethers.Contract(tokenDistributorAddress, TokenDistributor.abi, provider);
+    contract.activeAccounts(account).then(result => {
+      setIsRegistered(result)
+    })
+    .catch((e) => { console.log("e", e) });
+  }, [setIsRegistered, library, chainId, account])
+
+  return [isRegistered, setIsRegistered]
+}
 
 export function useLiquidationsData(chainId, account) {
   const [data, setData] = useState(null);
