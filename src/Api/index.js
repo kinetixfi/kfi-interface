@@ -121,6 +121,7 @@ export function useCoingeckoPrices(symbol) {
   const _symbol = {
     BTC: "bitcoin",
     ETH: "ethereum",
+    WETH: "ethereum",
     KAVA: "kava",
     ATOM: "cosmos-hub",
     USDT: "tether",
@@ -128,10 +129,11 @@ export function useCoingeckoPrices(symbol) {
   }[symbol];
 
   const _defaultPrice = {
-    BTC: 27000,
-    ETH: 1800,
+    BTC: 40000,
+    ETH: 2000,
+    WETH: 2000,
     KAVA: 0.8,
-    ATOM: 7,
+    ATOM: 10,
     USDT: 1,
     PKFI: 0.02,
   }[symbol];

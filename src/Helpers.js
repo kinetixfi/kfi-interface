@@ -123,6 +123,7 @@ export const MIN_PROFIT_BIPS = 0;
 export const KLPPOOLCOLORS = {
   KAVA: "#ff5650",
   ETH: "#6185F5",
+  WETH: "#b1c1f2",
   BTC: "#F7931A",
   ATOM: "#2e3248",
   USDT: "#67B18A",
@@ -143,6 +144,10 @@ export const ICONLINKS = {
     ETH: {
       coingecko: "https://www.coingecko.com/en/coins/weth",
       kava: "https://explorer.kava.io/address/0xb829b68f57CC546dA7E5806A929e53bE32a4625D",
+    },
+    WETH: {
+      coingecko: "https://www.coingecko.com/en/coins/weth",
+      kava: "https://explorer.kava.io/address/0x2DfD4dE5AE386Cd3f4fC8e2cb39240852E47F5E8",
     },
     BTC: {
       coingecko: "https://www.coingecko.com/en/coins/wrapped-bitcoin",
