@@ -46,6 +46,16 @@ const TOKENS = {
       rewardDisplayDecimals: 4,
     },
     {
+      name: "WETH",
+      symbol: "WETH",
+      decimals: 18,
+      address: "0x2DfD4dE5AE386Cd3f4fC8e2cb39240852E47F5E8",
+      coingeckoUrl: "https://www.coingecko.com/en/coins/ethereum",
+      isShortable: true,
+      displayDecimals:2,
+      rewardDisplayDecimals: 4,
+    },
+    {
       name: "Atom",
       symbol: "ATOM",
       address: "0x15932E26f5BD4923d46a2b205191C4b5d5f43FE3",
