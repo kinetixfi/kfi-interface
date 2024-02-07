@@ -436,7 +436,7 @@ export default function DashboardV2() {
                       <div className="App-card-title-mark-title">KLP</div>
                     </div>
                     <div>
-                      <a href="https://kavascan.com/address/0xa721f9f61CECf902B2BCBDDbd83E71c191dEcd8b" target="_blank">
+                      <a href="https://kavascan.io/address/0xa721f9f61CECf902B2BCBDDbd83E71c191dEcd8b" target="_blank">
                         <img src={showInExplorerIcon} style={{ width: 150, height: 20 }} alt="Proof of Reserves" />
                         <img src={externalLinkIcon} style={{ width: 20, height: 20, marginInlineStart: 5 }} alt="Proof of Reserves" />
                       </a>

@@ -112,7 +112,7 @@ export default function useInitWeb3Onboard() {
             autoDismiss: 0,
             // message: `Your transaction is pending, click <a href="https://goerli.etherscan.io/tx/${transaction.hash}" rel="noopener noreferrer" target="_blank">here</a> for more info.`,
             // or you could use onClick for when someone clicks on the notification itself
-            onClick: () => window.open(`https://kavascan.com/tx/${transaction.hash}`),
+            onClick: () => window.open(`https://kavascan.io/tx/${transaction.hash}`),
           };
         }
       },

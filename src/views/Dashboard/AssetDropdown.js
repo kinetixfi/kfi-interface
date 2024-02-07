@@ -36,7 +36,7 @@ function AssetDropdown({ assetSymbol, assetInfo }) {
           <>
             {assetSymbol === 'KLP' && (
               <a
-                href="https://kavascan.com/address/0xa721f9f61CECf902B2BCBDDbd83E71c191dEcd8b" //DONT FORGET
+                href="https://kavascan.io/address/0xa721f9f61CECf902B2BCBDDbd83E71c191dEcd8b" //DONT FORGET
                 className="asset-item"
                 target="_blank"
                 rel="noopener noreferrer"
