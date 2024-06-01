@@ -36,6 +36,16 @@ const TOKENS = {
       rewardDisplayDecimals: 4,
     },
     {
+      name: "WBTC",
+      symbol: "WBTC",
+      address: "0xb5c4423a65B953905949548276654C96fcaE6992",
+      coingeckoUrl: "https://www.coingecko.com/en/coins/wrapped-bitcoin",
+      decimals: 8,
+      isShortable: true,
+      displayDecimals:2,
+      rewardDisplayDecimals: 4,
+    },
+    {
       name: "axlETH",
       symbol: "ETH",
       decimals: 18,
