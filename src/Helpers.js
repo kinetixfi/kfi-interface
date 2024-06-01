@@ -153,6 +153,10 @@ export const ICONLINKS = {
       coingecko: "https://www.coingecko.com/en/coins/wrapped-bitcoin",
       kava: "https://explorer.kava.io/address/0x1a35EE4640b0A3B87705B0A4B45D227Ba60Ca2ad",
     },
+    WBTC: {
+      coingecko: "https://www.coingecko.com/en/coins/wrapped-bitcoin",
+      kava: "https://explorer.kava.io/address/0xb5c4423a65B953905949548276654C96fcaE6992",
+    },
     ATOM: {
       coingecko: "https://www.coingecko.com/en/coins/cosmos-hub",
       kava: "https://explorer.kava.io/address/0x15932E26f5BD4923d46a2b205191C4b5d5f43FE3",
